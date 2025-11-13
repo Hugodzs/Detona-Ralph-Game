@@ -4,7 +4,9 @@ view:{
     timer:document.querySelector("#time-left"),
     score:document.querySelector("#score"),
     enemy:document.querySelector(".enemy"),
-    square:document.querySelectorAll(".square")
+    square:document.querySelectorAll(".square"),
+    vidas:document.querySelector("#lifes")
+
 },
 
 values:{
@@ -13,7 +15,8 @@ values:{
     timervelocity :1000,
     hitPosition : 0,
     result : 0,
-    currentTime : 60,
+    currentTime : 20,
+    currentLife : 3,
 }
 };
 
@@ -25,6 +28,7 @@ function countDown (){
         clearInterval(state.values.timerId)
 
         alert(`Tempo acabou moral, você fez ${state.values.result} pontos`)
+        countLifes()
     }
 
 
@@ -85,6 +89,17 @@ function init (){
     
     moveEnemy();
     addListenerHitBox();
+  
+
+}
+function countLifes (){
+    if(state.values.result <= 10){
+        state.values.currentLife--;
+        state.view.vidas.textContent = state.values.currentLife;
+        clearInterval(state.values.currentLife);
+        clearInterval(state.values.result)
+    }
+
 
 }
 
