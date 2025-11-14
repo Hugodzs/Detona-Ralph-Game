@@ -1,1 +1,3 @@
 Nesse projeto, foi aplicado vários conceitos e de manipulação da DOM, Manipular Objetos, implementação de sons e imagens, e interação com usuário, utilizando apenas Java Script, Html e CSS...
+
+teste do game .... https://hugodzs.github.io/Detona-Ralph-Game/
