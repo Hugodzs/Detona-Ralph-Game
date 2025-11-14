@@ -45,3 +45,21 @@ background-image: url("../imgs/wall.png");
 .timer{
     margin-top: 1rem;
 }
+
+.instruction{  
+
+    color: hwb(180 99% 1%);
+    font-size: 10px;
+    margin-top: 60px;
+    background-color: black;
+
+
+}
+.instruction,h1,p{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
